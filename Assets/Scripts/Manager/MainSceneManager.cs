@@ -132,7 +132,7 @@ public class MainSceneManager : MonoBehaviour
 
         GameObject obj = CreateBalls();
         obj.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        players[0].GetComponent<PaddleMovement>().HoldBall(obj);
+        players[0].GetComponent<PaddleMovement>().HoldBall(obj, players[0].transform.position.x);
     }
 
     // 블록 파괴 시 
